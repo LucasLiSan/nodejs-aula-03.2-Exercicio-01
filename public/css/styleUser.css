@@ -1,0 +1,100 @@
+body {
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	margin: 0;
+	width: 100vw;
+	height: 100vh;
+	background: #c2c2c2;
+}
+
+.topMenuBar {
+    width: 100%;
+    height: 7%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #000007;
+}
+
+.topMenu {
+	width: 90%;
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+.topMenu li {
+	list-style: none;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 1.5rem;
+    width: 20%;
+    height: 100%;
+    text-align: center;
+    align-content: center;
+}
+
+.topMenu li:hover {
+	background-color: #c2c2c2;
+	color: #000000;
+}
+
+h1 {
+	text-transform: uppercase;
+    font-size: 3rem;
+    margin: 0 0 10px 0;
+}
+
+.container {
+	width: 100%;
+    height: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.btns {
+	width: 25%;
+	height: 30%;
+	padding: 20px;
+	text-transform: uppercase;
+	border-radius: 8px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+	color: #ffffff;
+	font-size: 1.5rem;
+	display: flex;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.btns p {
+	margin: 0;
+}
+
+.btns img {
+	width: 20%;
+}
+
+.btn-1, .btn-2, .btn-3 {
+	width: 100%;
+    display: inline-flex;
+    align-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.btns div:hover {
+	background-color: #ffffff;
+	color: #000000;
+}
