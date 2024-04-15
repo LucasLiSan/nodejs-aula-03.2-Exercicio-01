@@ -6,6 +6,18 @@
     <title>Loja - Carrinho</title>
 </head>
 <body>
-    <h1>Seus produtos</h1>
+    <h1>Seus Pedidos</h1>
+    <table border="1">
+        <tr>
+            <th width="120px">Pedido:</th>
+            <th>VALOR</th>
+        </tr>
+        <% pedidos.forEach(function(carrinho){ %>
+            <tr>
+                <td><%= carrinho.numPedido %></td>
+                <td><%= carrinho.valor %></td>
+            </tr>
+        <% }) %>
+    </table>
 </body>
 </html>

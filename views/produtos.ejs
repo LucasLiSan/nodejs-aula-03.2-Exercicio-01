@@ -7,5 +7,19 @@
 </head>
 <body>
     <h1>Produtos</h1>
+    <table border="1">
+        <tr>
+            <th width="120px">PRODUTO:</th>
+            <th>PREÇO</th>
+            <th>CATEGORIA</th>
+        </tr>
+        <% produtos.forEach(function(produto){ %>
+            <tr>
+                <td><%= produto.nomeProd %></td>
+                <td><%= produto.preco %></td>
+                <td><%= produto.categoria %></td>
+            </tr>
+        <% }) %>
+    </table>
 </body>
 </html>

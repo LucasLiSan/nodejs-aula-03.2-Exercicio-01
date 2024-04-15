@@ -17,17 +17,32 @@ app.get("/user", (req, res) => {
 
 //Tela dos clientes
 app.get("/clientes", (req,res) => {
-    res.render("clientes");
+    var clientes = [
+        {nome: "Lucas Lima", cpf: "123.456.789-10", endereco: "Rua 1"}
+    ];
+    res.render("clientes", {
+        clientes : clientes
+    });
 });
 
 //Tela de pedidos
 app.get("/carrinho", (req,res) => {
-    res.render("carrinho");
+    var pedidos = [
+        {numPedido: 1, valor: 2000}
+    ];
+    res.render("carrinho", {
+        pedidos : pedidos
+    });
 });
 
 //Tela de produtos
 app.get("/produtos", (req,res) => {
-    res.render("produtos");
+    var produtos = [
+        {nomeProd: "celular", preco: 2000, categoria: "smartphone"}
+    ];
+    res.render("produtos", {
+        produtos : produtos
+    });
 });
 
 
