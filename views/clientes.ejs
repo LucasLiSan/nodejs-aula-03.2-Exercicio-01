@@ -1,26 +1,39 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Loja - Clientes</title>
-</head>
-<body>
-    <%- include ('partials/nav.ejs') %>
-    <h1>Tela clientes</h1>
-    <table border="1">
-        <tr>
-            <th width="120px">NOME:</th>
-            <th>CPF</th>
-            <th>ENDEREÇO</th>
-        </tr>
-        <% clientes.forEach(function(cliente){ %>
-            <tr>
-                <td><%= cliente.nome %></td>
-                <td><%= cliente.cpf %></td>
-                <td><%= cliente.endereco %></td>
-            </tr>
-        <% }) %>
-    </table>
-</body>
-</html>
+    <html lang="pt-br">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Loja - Clientes</title>
+        </head>
+        <body>
+            <%- include ('partials/nav.ejs') %>
+            <main class="clientsBody">
+                <h1>Clientes</h1>
+                <table  class="clientTable">
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>NOME:</th>
+                            <th>C.P.F.</th>
+                            <th>ENDEREÇO</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <% clientes.forEach(function(cliente){ %>
+                            <tr>
+                                <td><img src="<%= cliente.profilePic %>" alt=""></td>
+                                <td><%= cliente.nome %></td>
+                                <td><%= cliente.cpf %></td>
+                                <td><%= cliente.endereco %></td>
+                            </tr>
+                        <% }) %>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <th colspan="4"></th>
+                        </tr>
+                    </tfoot>
+                </table>
+            </main>
+        </body>
+    </html>

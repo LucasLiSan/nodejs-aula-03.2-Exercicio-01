@@ -3,26 +3,34 @@
         <head>
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <link rel="stylesheet" href="/css/styleUser.css">
             <title>Bem Vindo a Loja</title>
         </head>
         <body>
             <%- include ('partials/nav.ejs') %>
-            <div class="container">
-                <h1>Bem vindo a Loja</h1>
-                <div class="btns">
-                    <div class="btn-hover">
-                        <img class="logo-1" src="/imgs/Gear.svg" alt="">
-                        <p class="button-1">clientes</p>
-                    </div>
-                    <div class="btn-hover">
-                        <img class="logo-2" src="/imgs/Gear.svg" alt="">
-                        <p class="button-2">produtos</p>
-                    </div>
-                    <div class="btn-hover">
-                        <img class="logo-3" src="/imgs/Gear.svg" alt="">
-                        <p class="button-3">pedidos</p>
-                    </div>
+            <div class="containerMenu">
+                <h1 class="titleUser">Bem vindo a Loja.inc</h1>
+                <div class="menuOpts">
+                    <a class="opt1" href="/clientes">
+                        <div class="img1">
+                            <img src="/imgs/clientes.png" alt="Icon clientes">
+                        </div>
+                        <label class="btnOpt1">CLIENTES</label>
+                    </a>
+                    <a class="opt2" href="/produtos">
+                        <div class="img2">
+                            <img src="/imgs/produtos.png" alt="Icon produtos">
+                        </div>
+                        <label class="btnOpt2">PRODUTOS</label>
+                    </a>
+                    <a class="opt3" href="/carrinho">
+                        <div class="img3">
+                            <img src="/imgs/pedidos.png" alt="Icon pedidos">
+                        </div>
+                        <label class="btnOpt3">PEDIDOS</label>
+                    </a>
+                </div>
+                <div class="btnSair">
+                    <a href="/index">SAIR</a>
                 </div>
             </div>
         </body>

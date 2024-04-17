@@ -1,9 +1,9 @@
 body {
-	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-	margin: 0;
-	width: 100vw;
-	height: 100vh;
-	background: #c2c2c2;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #c2c2c2;
 }
 
 .login-form {
@@ -14,7 +14,7 @@ body {
   justify-content: center;
 }
 
-.container {
+.containerIndex {
   width: 100%;
   max-width: 400px;
   padding: 0 20px;
@@ -46,7 +46,7 @@ input {
   border-radius: 4px;
   transition: border-color 0.3s ease-in-out;
   outline: none;
-  color: #fff;
+  color: #000000;
 }
 
 input:focus {
@@ -65,4 +65,235 @@ button {
 
 button:hover {
   background-color: #2980b9;
+}
+
+.topMenuBar {
+  width: 100%;
+  height: 7%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #000007;
+}
+
+.topMenu {
+  width: 90%;
+  display: inline-flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+}
+
+.topMenu a {
+  text-decoration: none;
+  width: 100%;
+}
+
+.topMenu li {
+  list-style: none;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-size: 1.5rem;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  align-content: center;
+}
+
+.topMenuBar li:hover {
+  background-color: #c2c2c2;
+  color: #000000;
+}
+
+.topMenu li:active {
+  background-color: #00ff00;
+  color: #000000;
+}
+
+.containerMenu {
+  height: 90%;
+  display: grid;
+  grid-template:
+    ". titleUser. " 10%
+    ". menuOpts ." 45%
+    ". btnSair ." 10%
+    /20% 1fr 20%
+  ;
+  align-content: center;
+}
+
+.titleUser {
+  grid-area: titleUser;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  align-content: center;
+  text-transform: uppercase;
+  font-size: 3rem;
+}
+
+.menuOpts {
+  grid-area: menuOpts;
+  display: grid;
+  align-content: center;
+  grid-template:
+    ". opt1 ." 30%
+    ". opt2 ." 30%
+    ". opt3 ." 30% 
+    /1fr 50% 1fr
+  ;
+}
+
+.opt1, .opt2, .opt3 {
+  display: grid;
+  text-decoration: none;
+  color: #000000;
+  border-left: solid 2px;
+  border-right: solid 2px;
+}
+
+.opt1 {
+  grid-area: opt1;
+  grid-template: 
+    "img1 label1" 100%
+    /1fr 1fr
+  ;
+  border-top: solid 2px;
+}
+
+.opt2 {
+  grid-area: opt2;
+  grid-template: 
+    "img2 label2" 100%
+    /1fr 1fr
+  ;
+}
+
+.opt3 {
+  grid-area: opt3;
+  grid-template: 
+    "img3 label3" 100%
+    /1fr 1fr
+  ;
+  border-bottom: solid 2px;
+}
+
+.opt1:hover, .opt2:hover, .opt3:hover, .btnSair a:hover {
+  background: #ffffff;
+  color: #000000;
+}
+
+.opt1:active, .opt2:active, .opt3:active, .btnSair a:active {
+  background: #00ff00;
+  color: #000000;
+}
+
+.img1 {
+  grid-area: img1;
+}
+
+.img2 {
+  grid-area: img2;
+}
+
+.img3 {
+  grid-area: img3;
+}
+
+.img1, .img2, .img3 {
+  align-content: center;
+  text-align: center;
+}
+
+.img1 > img, .img2 > img, .img3 > img{
+  height: 80%;
+}
+
+.btnOpt1 {
+  grid-area: label1;
+}
+
+.btnOpt2 {
+  grid-area: label2;
+}
+
+.btnOpt3 {
+  grid-area: label3;
+}
+
+.btnOpt1, .btnOpt2, .btnOpt3 {
+  font-size: 2rem;
+  font-weight: bolder;
+  align-content: center;
+}
+
+.btnSair {
+  grid-area: btnSair;
+  width: 100%;
+  height: 100%;
+  align-content: center;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.btnSair a {
+  width: 25%;
+  height: 85%;
+  align-content: center;
+  background-color: #000000;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+
+.clientsBody {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+}
+
+.clientsBody h1 {
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+
+.clientTable {
+  width: 80%;
+  border-collapse: collapse;
+}
+
+.clientTable thead > tr {
+  height: 60px;
+  background: #555555;
+  color: #ffffff;
+  font-size: 1.3rem;
+}
+
+.clientTable td {
+  width: 25%;
+  align-content: center;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.clientTable tbody > tr:nth-child(odd) {
+  background: #acacac;
+}
+
+.clientTable tbody > tr:hover {
+  background: #ffffff;
+}
+
+.clientTable img {
+  width: 40%;
+  border-radius: 45px;
 }
