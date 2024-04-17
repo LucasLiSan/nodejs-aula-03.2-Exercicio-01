@@ -51,17 +51,6 @@ app.get("/produtos", (req,res) => {
     });
 });
 
-
-
-
-
-
-
-
-
-
-
-
 app.listen(8080, function(erro){
     if(erro){
         console.log("Ocorreu um erro!")
