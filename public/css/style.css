@@ -310,28 +310,40 @@ button:hover {
 .produtBody h1 {
   width: 100%;
   text-align: center;
+  text-transform: uppercase;
+  grid-area: titleProd;
+  margin: 0;
+  align-content: center;
 }
 
 .containerProdutos {
   width: 100vw;
   height: 100vh;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-content: flex-start;
 }
 
 .cardProdutos {
-  width: 25%;
+  width: 15%;
   height: 50%;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  border: dashed 1px;
 }
 
 .cardProdutos label {
-  height: 20%;
-  width: 100%;
-  text-align: center;
+  height: 30%;
+  width: 90%;
   align-content: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+  font-size: 1rem;
 }
 
 .cardProdutos p {
@@ -340,14 +352,137 @@ button:hover {
   text-align: center;
   margin: 0;
   align-content: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.preco {
+  color: #ff0000;
+}
+
+.cat {
+  color: #000000;
 }
 
 .imgProd {
-  height: 70%;
+  height: 50%;
   text-align: center;
+  align-content: center;
 }
 
 .imgProd img {
+  height: 95%;
+}
+
+.containerProdutosList {
+  width: 100%;
+  height: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.header {
+  width: 90%;
+  display: grid;
+  grid-template: 
+    "titleProd titleProd btnList btnGrid" 100%
+    / 1fr 1fr 5% 5%
+  ;
+  align-items: center;
+  justify-items: center;
+}
+
+.btnList {
+  grid-area: btnList;
+}
+
+.btnGrid {
+  grid-area: btnGrid;
+}
+
+.btnGrid, .btnList {
+  width: 70%;
+  height: 80%;
+}
+
+.btnGrid:hover, .btnList:hover {
+  background: #ffffff;
+}
+
+.btnGrid img, .btnList img {
+  width: 100%;
   height: 100%;
 }
 
+.cardProdutosList {
+  width: 90%;
+  height: 30%;
+  display: inline-flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  border: dashed 1px;
+  margin: 5px;
+}
+
+.cardProdutosList:nth-child(odd), .cardProdutos:nth-child(odd) {
+  background-color: #acacac;
+}
+
+.cardProdutosList:hover, .cardProdutos:hover {
+  background-color: #ffffff;
+}
+
+.imgProdList {
+  width: 15%;
+  height: 100%;
+  align-content: center;
+  text-align: center;
+}
+
+.imgProdList img {
+  width: 80%;
+}
+
+.descProdList {
+  width: 70%;
+  height: 100%;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  align-content: center;
+}
+
+.precoCatProd {
+  width: 15%;
+  height: 100%;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.precoCatProd p {
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.catProd {
+  height: 10%;
+}
+
+.precoProd {
+  align-content: center;
+  height: 90%;
+  color: #ff0000;
+}
+
+.gray {
+  background: #acacac;
+}
+
+.transparent {
+  background: none;
+}
