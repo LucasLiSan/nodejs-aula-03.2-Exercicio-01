@@ -44,7 +44,12 @@ app.get("/carrinho", (req,res) => {
 //Tela de produtos
 app.get("/produtos", (req,res) => {
     var produtos = [
-        {nomeProd: "celular", preco: 2000, categoria: "smartphone"}
+        {imgProd: "imgs/placaDeVideosRTX4060.jpg", nomeProd: "Placa de Vídeo RTX 4060 VENTUS 2x Black OC MSI NVIDIA GeForce, 8GB GDDR6, DLSS, Ray Tracing", preco: 2149.99, categoria: "hardware"},
+        {imgProd: "imgs/ProcessadorAMDRyzen5-4600G.jpg", nomeProd: "Processador AMD Ryzen 5 4600G, 3.7GHz (4.2GHz Max Turbo), Cache 11MB, AM4, Vídeo Integrado", preco: 599.99, categoria: "hardware"},
+        {imgProd: "PlacaMãeAsusTUFGAMINGA520MPLUSII-AMD-AM4.jpg", nomeProd: "Placa Mãe Asus TUF GAMING A520M-PLUS II, AMD AM4, mATX, DDR4", preco: 569.99, categoria: "hardware"},
+        {imgProd: "Microsoft365Personal.jpg", nomeProd: "Microsoft 365 Personal, 12 Meses - QQ2-01017 / QQ2-01386 - Mídia Física", preco: 139.99, categoria: "software"},
+        {imgProd: "MicrosoftWindows11Pro64.webp", nomeProd: "Licença Microsoft Windows 11 Pro 64 Bits ESD", preco: 79.90, categoria: "software"},
+        {imgProd: "AdobePhotoshop2023.jpg", nomeProd: "Adobe Photoshop 2023", preco: 229.00, categoria: "software"}
     ];
     res.render("produtos", {
         produtos : produtos

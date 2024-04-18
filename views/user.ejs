@@ -1,37 +1,29 @@
-<!DOCTYPE html>
-    <html lang="pt-br">
-        <head>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>Bem Vindo a Loja</title>
-        </head>
-        <body>
-            <%- include ('partials/nav.ejs') %>
-            <div class="containerMenu">
-                <h1 class="titleUser">Bem vindo a Loja.inc</h1>
-                <div class="menuOpts">
-                    <a class="opt1" href="/clientes">
-                        <div class="img1">
-                            <img src="/imgs/clientes.png" alt="Icon clientes">
-                        </div>
-                        <label class="btnOpt1">CLIENTES</label>
-                    </a>
-                    <a class="opt2" href="/produtos">
-                        <div class="img2">
-                            <img src="/imgs/produtos.png" alt="Icon produtos">
-                        </div>
-                        <label class="btnOpt2">PRODUTOS</label>
-                    </a>
-                    <a class="opt3" href="/carrinho">
-                        <div class="img3">
-                            <img src="/imgs/pedidos.png" alt="Icon pedidos">
-                        </div>
-                        <label class="btnOpt3">PEDIDOS</label>
-                    </a>
-                </div>
-                <div class="btnSair">
-                    <a href="/index">SAIR</a>
-                </div>
+<%- include ('partials/header.ejs') %>
+<%- include ('partials/nav.ejs') %>
+<div class="containerMenu">
+    <h1 class="titleUser">Bem vindo a Loja.inc</h1>
+    <div class="menuOpts">
+        <a class="opt1" href="/clientes">
+            <div class="img1">
+                <img src="/imgs/clientes.png" alt="Icon clientes">
             </div>
-        </body>
-    </html>
+            <label class="btnOpt1">CLIENTES</label>
+        </a>
+        <a class="opt2" href="/produtos">
+            <div class="img2">
+                <img src="/imgs/produtos.png" alt="Icon produtos">
+            </div>
+            <label class="btnOpt2">PRODUTOS</label>
+        </a>
+        <a class="opt3" href="/carrinho">
+            <div class="img3">
+                <img src="/imgs/pedidos.png" alt="Icon pedidos">
+            </div>
+            <label class="btnOpt3">PEDIDOS</label>
+        </a>
+    </div>
+    <div class="btnSair">
+        <a href="/index">SAIR</a>
+    </div>
+</div>
+<%- include ('partials/footer.ejs') %>

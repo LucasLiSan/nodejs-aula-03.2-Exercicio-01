@@ -1,26 +1,18 @@
-<!DOCTYPE html>
-    <html lang="pt-br">
-        <head>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>Loja - Produtos</title>
-        </head>
-        <body>
-            <%- include ('partials/nav.ejs') %>
-            <h1>Produtos</h1>
-            <table border="1">
-                <tr>
-                    <th width="120px">PRODUTO:</th>
-                    <th>PREÇO</th>
-                    <th>CATEGORIA</th>
-                </tr>
-                <% produtos.forEach(function(produto){ %>
-                    <tr>
-                        <td><%= produto.nomeProd %></td>
-                        <td><%= produto.preco %></td>
-                        <td><%= produto.categoria %></td>
-                    </tr>
-                <% }) %>
-            </table>
-        </body>
-    </html>
+<%- include ('partials/header.ejs') %>
+<%- include ('partials/nav.ejs') %>
+<main class="produtBody">
+    <h1>Produtos</h1>
+    <div class="containerProdutos">
+        <div class="cardProdutos">
+            <div class="imgProd">
+                <img src="imgs/AdobePhotoshop2023.jpg" alt="">
+            </div>
+            <label for="">Adobe Photoshop 2023</label>
+            <p>229,00</p>
+        </div>
+    </div>
+</main>
+
+
+
+<%- include ('partials/footer.ejs') %>
