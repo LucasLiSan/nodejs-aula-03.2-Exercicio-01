@@ -311,6 +311,7 @@ button:hover {
   width: 100%;
   text-align: center;
   text-transform: uppercase;
+  font-size: 2rem;
   grid-area: titleProd;
   margin: 0;
   align-content: center;
@@ -485,4 +486,132 @@ button:hover {
 
 .transparent {
   background: none;
+}
+
+.pedidosBody {
+  width: 100vw;
+  height: 100vh;
+}
+
+.pedidosBody h1 {
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+
+.pedidosContainer {
+  width: 95%;
+  border: solid 2px;
+}
+
+.pedidos {
+  width: 100%;
+  height: 45px;
+  align-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  flex-direction: row;
+  align-items: center;
+}
+
+.pedidos label, .valorTotal label {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: bold;
+  background: #ffff00;
+  height: 40px;
+  align-content: center;
+  width: 110px;
+  text-align: center;
+}
+
+.pedidos span, .valorTotal span {
+  font-size: 1.5rem;
+  color: #ff0000;
+  background: #ffff00;
+  height: 40px;
+  align-content: center;
+  width: 140px;
+}
+
+.pedidosLista {
+  width: 95%;
+}
+
+.valorTotal {
+  width: 100%;
+  height: 45px;
+  display: flex;
+  align-content: center;
+  text-align: end;
+  flex-direction: row;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.cardPedidos {
+  width: 100%;
+  height: 30%;
+  display: inline-flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  border: dashed 1px;
+  margin: 5px;
+}
+
+.cardPedidos:nth-child(odd), .cardPedidos:nth-child(odd) {
+  background-color: #acacac;
+}
+
+.cardPedidos:hover, .cardPedidos:hover {
+  background-color: #ffffff;
+}
+
+.imgPedidos {
+  width: 15%;
+  height: 100%;
+  align-content: center;
+  text-align: center;
+}
+
+.imgPedidos img {
+  width: 80%;
+}
+
+.descPedidos {
+  width: 70%;
+  height: 100%;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  align-content: center;
+}
+
+.precoCatPedidos {
+  width: 15%;
+  height: 100%;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.precoCatPedidos p {
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.precoPedidos {
+  align-content: center;
+  height: 90%;
+  color: #ff0000;
+}
+
+.catPedid {
+  height: 10%;
+  text-transform: uppercase;
 }
